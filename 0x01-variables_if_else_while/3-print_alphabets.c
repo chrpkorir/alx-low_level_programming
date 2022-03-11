@@ -9,7 +9,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main()
 {
 	/* print lowercase letters */
 	char ch;
@@ -19,6 +19,6 @@ int main(void)
 	/* print uppercase letters */
 	for (ch = 'A'; ch <= 'Z'; ch++)
 		putchar(ch);
-	putchar ('\n');
-	return (0);	
+	putchar('\n');
+	return (0);
 }
