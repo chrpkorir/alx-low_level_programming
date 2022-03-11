@@ -2,6 +2,7 @@
  * File: 3-print_alphabets.c
  * Auth:Chepkorir Faith
  */
+
 #include <stdio.h>
 
 /**
@@ -9,7 +10,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	/* print lowercase letters */
 	char ch;
