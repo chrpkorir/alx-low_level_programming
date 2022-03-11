@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-	/* print uppercase letters */
+	/* print lowercase letters */
 	char ch;
 
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
 
-	/* print lowercase letters */
-	for (ch= 'a'; ch<= 'z'; ch++)
+	/* print uppercase letters */
+	for (ch= 'A'; ch<= 'Z'; ch++)
 		putchar(ch);
 
 	putchar ('\n') ;
