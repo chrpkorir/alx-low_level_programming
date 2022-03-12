@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
- * Main - 
+ * Main - Prints the alphabet in lower case except q and e
  *
  * Return: Always 0 (Success)
  */
@@ -15,7 +15,7 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if ( ch != 'q' && ch != 'e')
+		if (ch != 'q' && ch != 'e')
 		{
 		putchar(ch);
 		}
