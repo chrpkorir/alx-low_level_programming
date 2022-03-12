@@ -1,3 +1,7 @@
+/*
+ * File: 4-print_alphabt.c
+ * Auth:Chepkorir Faith
+ */
 #include <stdio.h>
 
 /**
@@ -5,14 +9,16 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char ch;
 
-	for (ch = 'a'; ch <= 'z' && ch != 'q' && ch != 'e'; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
+		if ( ch != 'q' && ch != 'e')
+		{
 		putchar(ch);
+		}
 	}
 	return (0);
 }
