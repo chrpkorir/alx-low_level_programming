@@ -1,12 +1,7 @@
-/*
- * File: 3-print_alphabets.c
- * Auth:Chepkorir Faith
- */
-
 #include <stdio.h>
 
 /**
- * Main - Prints the alphabet in lowercase, and then in uppercase.
+ * main - Prints the alphabet in lower case and upper case
  *
  * Return: Always 0 (Success)
  */
