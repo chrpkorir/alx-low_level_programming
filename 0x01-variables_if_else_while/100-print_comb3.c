@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print all possible different combination of 2 digits
+ * main- Print all possible different combination of 2 digits
  *
  * Return- Always 0(success)
  */
@@ -9,7 +9,7 @@ int main(void)
 {
 	int a, b;
 
-	for ( a = 48; a <= 56; a++)
+	for (a = 48; a <= 56; a++)
 	{
 		for (b = 49; b <= 57; b++)
 		{
@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(a);
 				putchar(b);
-				if( (a != 56) || (a == 56 && b != 57))
+				if ((a != 56) || (a == 56 && b != 57))
 				{
 				putchar(',');
 				putchar(' ');
