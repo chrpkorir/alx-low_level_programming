@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
- * Main - Prints the alphabet in lower case except q and e
+ * main - Prints the alphabet in lower case except q and e
  *
  * Return: Always 0 (Success)
  */
@@ -20,5 +20,6 @@ int main(void)
 		putchar(ch);
 		}
 	}
+	putchar('\n');
 	return (0);
 }
