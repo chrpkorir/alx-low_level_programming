@@ -14,8 +14,8 @@ void rev_string(char *s)
 	while (end > src)
 	{
 		char t = *end;
-       		*end-- = *src;
+		*end-- = *src;
 		*src++ = t;
 	}
-	printf("%s", s);
+	printf("%s\n", s);
 }
