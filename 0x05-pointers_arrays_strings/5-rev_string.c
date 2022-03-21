@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * rev_string - function thst reverses a string
@@ -16,6 +17,6 @@ void rev_string(char *s)
        		*end-- = *src;
 		*src++ = t;
 	}
-	_putchar(s);
+	_putchar(*s);
 }	
 	
