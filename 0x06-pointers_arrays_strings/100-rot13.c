@@ -4,10 +4,8 @@
 /**
  * rot13 - encoder rot13
  * @s: pointer to string 
- *
  * Return: *s
  */
-
 char *rot13(char *s)
 {
 	int i;
