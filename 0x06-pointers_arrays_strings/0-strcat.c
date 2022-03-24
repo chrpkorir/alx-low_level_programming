@@ -11,15 +11,16 @@ char *_strcat(char *dest, char *src)
 {
 	char *org = dest;
 
-	while (*dest++)
+	while (*dest != '\0')
 	{
-		;
+		dest++;
 	}
 	//at this moment *dest must be pointing to '\0'
-	while (*dest++ = *src++)
+	while (*src !+ '\0')
 	{
-		;
+		*dest++ = *src++;
 	}
+	*dest = '\0';
 	//at this moment, *dest Must be pointing to '\0' again
 	return org;
 }
