@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * cretae_array - create array of size (size) and assign char c
+ * create_array - create array of size (size) and assign char c
  * @size: size of array
  * @c: character to assign
  * 
  * Create an array of size size and assign char 
  * Return: pointer to array else NULL
  */
-char *crete_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *str;
 	unsigned int i;
