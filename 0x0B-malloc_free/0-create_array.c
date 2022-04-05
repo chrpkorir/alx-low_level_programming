@@ -9,7 +9,7 @@
  * Create an array of size size and assign char 
  * Return: pointer to array else NULL
  */
-char *cretae_array(unsigned int size, char c)
+char *crete_array(unsigned int size, char c)
 {
 	char *str;
 	unsigned int i;
