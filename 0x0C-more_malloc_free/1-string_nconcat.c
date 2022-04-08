@@ -6,10 +6,8 @@
  * @s1: string to append to
  * @s2: string to concatenate from
  * @n: number of bytes to be allocate
- *
  * Description: if n is >= len(s2), use entire s2 string.
- * Return: pointer to allocated memory 
- * otherwise NULL if function fails 
+ * Return: pointer to allocated memory, NULL if function fails 
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
