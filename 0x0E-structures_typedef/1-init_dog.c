@@ -1,28 +1,19 @@
 #include <stdlib.h>
 #include <stdio.h>
+#inlude "dog.h"
 
 /**
  * init_dog - initialize a variable of type struct dog
- * @name: structure
- * @owner: struct
- * @age: struct
+ * @d: pointer to struct dog 
+ * @name: initialize name
+ * @owner: initialize owner
+ * @age: initialize age
  */
-struct dog
-{
-	char * name;
-	char *owner;
-	int age;
-};
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct *dog;
-
-	dog = malloc(sizeof(struct dog));
-	if (dog == NULL)
-		return (NULL);
-	dog->name  = name;
-	dog->owner = owner;
-	dog->age = age;
-	return dog;
+	if (d == NULL)
+		d = malloc(sizeof(struct dog));
+	d->name  = name;
+	d->owner = owner;
+	d->age = age;
 }
