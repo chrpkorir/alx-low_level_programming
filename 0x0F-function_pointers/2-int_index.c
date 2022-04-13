@@ -6,7 +6,8 @@
  * @array: pointer
  * @size: number of elements in array
  * @cmp: pointer to a function
- * Return: -1 if NULLor size <= 0, otherwise int_index
+ * Return: -1 if NULLor size <= 0, 
+ * otherwise int_index
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
