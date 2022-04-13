@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * array_iteration - executes a function given as parameter
+ * array_iterator - executes a function given as parameter
  * @size: size of an array
- * @action: a pointer to the function
+ * @action: a pointer to a function
  * @array: pointer array
  * Return: void
  */
