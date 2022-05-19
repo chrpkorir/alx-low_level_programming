@@ -6,7 +6,7 @@
  *
  * Return: converted number
  */
-unsigne int binary_to_int(const char *b)
+unsigned int binary_to_int(const char *b)
 {
 	int i;
 	unsigned int dec_val = 0;
