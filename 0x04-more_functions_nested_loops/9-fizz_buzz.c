@@ -2,7 +2,7 @@
 
 /**
  * main - Fizz Buzz code
- *  
+ *
  * Return: void
  */
 
