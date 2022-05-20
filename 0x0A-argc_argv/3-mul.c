@@ -2,37 +2,42 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string to an int
+ * _atoi - converts a string to an integer
  * @s: string to be converted
- * 
- * Return: the in converted from string
+ *
+ * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
-	int index, len,f,n,digit;
+	int i, d, n, len, f, digit;
 
-	index = 0;
+	i = 0;
 	d = 0;
 	n = 0;
 	len = 0;
-	digit = 0;
 	f = 0;
+	digit = 0;
 
 	while (s[len] != '\0')
 		len++;
-	while (index < len && f == 0)
+
+	while (i < len && f == 0)
 	{
-		if (s[index] == '-')
+		if (s[i] == '-')
 			++d;
-		if (s[index] >= '0' && s[index] <= '9')
+
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			digit = s[index] - '0';
+			digit = s[i] - '0';
 			if (d % 2)
 				digit = -digit;
 			n = n * 10 + digit;
 			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
 		}
-		index++;
+		i++;
 	}
 
 	if (f == 0)
@@ -42,7 +47,7 @@ int _atoi(char *s)
 }
 
 /**
- * main - multiplies 2 numbers
+ * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
