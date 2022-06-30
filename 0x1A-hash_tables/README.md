@@ -1,0 +1,57 @@
+#  C - Hash tables
+
+### Tasks
+
+* 0. >>> ht = {}
+* Write a function that creates a hash table.
+
+* 1. djb2
+* Write a hash function implementing the djb2 algorithm
+
+* 2. key -> index
+* Write a function that gives you the index of a key.
+
+* 3. >>> ht['betty'] = 'cool'
+* Write a function that adds an element to the hash table.
+
+* 4. >>> ht['betty']
+* Write a function that retrieves a value associated with a key.
+
+* 5. >>> print(ht)
+* Write a function that prints a hash table.
+
+* 6. >>> del ht
+* Write a function that deletes a hash table.
+
+
+
+### Data Structure
+
+/**
+ * struct hash_node_s - Node of a hash table
+ *
+ * @key: The key, string
+ * The key is unique in the HashTable
+ * @value: The value corresponding to a key
+ * @next: A pointer to the next node of the List
+ */
+typedef struct hash_node_s
+{
+     char *key;
+     char *value;
+     struct hash_node_s *next;
+} hash_node_t;
+
+/**
+ * struct hash_table_s - Hash table data structure
+ *
+ * @size: The size of the array
+ * @array: An array of size @size
+ * Each cell of this array is a pointer to the first node of a linked list,
+ * because we want our HashTable to use a Chaining collision handling
+ */
+typedef struct hash_table_s
+{
+     unsigned long int size;
+     hash_node_t **array;
+} hash_table_t;
